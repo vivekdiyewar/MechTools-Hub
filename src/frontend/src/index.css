@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Mechtools palette - light mode */
+    --background: 0.965 0.007 240; /* #F2F5F8 light gray */
+    --foreground: 0.18 0.03 240; /* #1B2430 dark text */
+    --card: 1 0 0; /* white */
+    --card-foreground: 0.18 0.03 240;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.03 240;
+    --primary: 0.48 0.13 252; /* #2F6FB8 blue */
+    --primary-foreground: 1 0 0;
+    --secondary: 0.94 0.006 240; /* #E9EEF3 pill gray */
+    --secondary-foreground: 0.35 0.03 240;
+    --muted: 0.94 0.006 240;
+    --muted-foreground: 0.5 0.02 240;
+    --accent: 0.92 0.008 240; /* #E6EBF0 */
+    --accent-foreground: 0.18 0.03 240;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.92 0.008 240; /* #E6EBF0 */
+    --input: 0.89 0.01 240; /* #D7DEE6 */
+    --ring: 0.48 0.13 252;
+
+    /* Navy colors for navbar/hero/footer */
+    --navy-deep: 0.14 0.04 240; /* #071A2A */
+    --navy-mid: 0.19 0.05 240; /* #0B2A3D */
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
